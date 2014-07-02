@@ -8,14 +8,70 @@
 // own extensions
 @import forms
 
+/***************************************************************/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/***************************************************************/
+
+// FONTS
+h1,h2,h3,h4,h5,h6,p
+	text-rendering: optimizeLegibility
+
+// PANNEL
+.pannel
+	background-color: white
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(50, 50, 50, 0.2)
+	-moz-box-shadow: 5px 5px 20px 0px rgba(50, 50, 50, 0.2)
+	box-shadow: 5px 5px 20px 0px rgba(50, 50, 50, 0.2)
+	padding: 40px 60px 60px 60px
 
 
 
-h1
-	font-family: 'KPN-Accent', serif
 
-h2
-	font-family: 'KPN-Sans', serif
+// BACKGROUNDS
+.internet
+	background: url(../img/background-1.jpg) no-repeat
+	background-position: 50%
+	background-size: cover
+	margin: 0 auto
+	// max-height: if needed
+	max-width: 3200px
 
-h3
-	font-family: 'KPN-Sans-Bold', serif
+
+// INTERNET
+
+.btn
+	background-color: transparent
+	width: 50%
+	border: 1px solid $greyish
+
+.btn-basis
+
+
+.btn:focus, .btn:hover
+	border: 1px solid $green
+	color: $green
+
+.btn-group > .btn:last-child:not(:first-child), .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle)
+	border-bottom-left-radius: 10px
+	border-top-left-radius: 10px
+	border-bottom-right-radius: 10px
+	border-top-right-radius: 10px
+
+
+.title
+	padding-bottom: 30px
+
+/***************************************************************/
+/* Small devices (tablets, 768px and up) */
+/***************************************************************/
+
+@media (min-width: $screen-sm-min)
+	//TBD
+
+/***************************************************************/
+/* Medium devices (desktops, 992px and up) */
+/***************************************************************/
+
+@media (min-width: $screen-md-min)
+	//TBD
