@@ -1,0 +1,27 @@
+box: wercker/ruby
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    # Install gems
+    - bundle-install
+    # Build jekyll
+    - script:
+        name: generate site
+        code: JEKYLL_ENV=production bundle exec jekyll build --trace --destination $WERCKER_OUTPUT_DIR
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: $SSH_HOST
+    - mktemp:
+        envvar: PRIVATEKEY_PATH
+    - create-file:
+        name: write key
+        filename: $PRIVATEKEY_PATH
+        content: $SSH_KEY_PRIVATE
+        overwrite: true
+        hide-from-log: true
+    - sjoerdmulder/rsync-deploy:
+        host: $SSH_HOST
+        directory: $SSH_DIRECTORY
+        sshkey: $PRIVATEKEY_PATH

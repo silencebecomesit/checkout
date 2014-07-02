@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+    {{ content }}
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.h5validate.js"></script>
+
+<script src="/js/jquery.easings.min.js"></script>
+<script src="/js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata version="1.0">
+    <uniqueid id="KPNSans Bold Italic v1.073" />
+    <vendor name="Font Vendor" url="http://www.lucasfonts.com" />
+    <credits>
+        <credit
+            name="Luc(as) de Groot"
+            url="http://www.lucasfonts.com/about"
+            role="Lead" />
+    </credits>
+    <description>
+        <text lang="en">
+            www.lucasfonts.com.
+        </text>
+    </description>
+    <license url="http://www.lucasfonts.com/eula"
+	             id="lucasfonts-eula-v1.10">
+        <text lang="en">A license goes here.</text>
+    </license>
+    <copyright>
+        <text lang="en">Copyright © 2012 Luc(as) de Groot, published by LucasFonts.</text>
+    </copyright>
+    <trademark>
+        <text lang="en">KPNSans is a trademark of LucasFonts</text>
+    </trademark>
+    <licensee name="KPN.nl" />
+</metadata>
